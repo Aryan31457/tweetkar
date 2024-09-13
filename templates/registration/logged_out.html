@@ -1,0 +1,13 @@
+{%extends "layout.html"%}
+
+{%block content%}
+<h2>Logged out</h2>
+<form method ="post">
+    {% comment %} {%csrf_token%}
+    {{form.as_p}}
+    <button class="btn btn primary">Login</button> {% endcomment %}
+
+{% comment %} </form> {% endcomment %}
+<p>You have been logged out  ? <a href="{%url 'register'%}">Register here</a></p>
+
+{%endblock%}
